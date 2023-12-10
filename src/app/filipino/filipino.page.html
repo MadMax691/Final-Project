@@ -1,0 +1,373 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Filipino</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+
+
+  <ion-card>
+    <img src="./assets/filipino.jpg"/>
+  
+    <ion-card-content>
+     Directions: Read the questions carefully and choose the correct answer.
+    </ion-card-content>
+  </ion-card>
+    
+    
+<ion-card>
+<ion-card-header>
+<ion-label color="dark"> 1. Ano ang tawag sa simuno o pangngalan sa pangungusap?</ion-label>
+</ion-card-header>
+
+
+<ion-list>
+  <ion-radio-group [(ngModel)] ="Question1" (ionChange)="SeeAnswer1()">
+   
+  <ion-item>
+   <ion-label> a Pandiwa</ion-label>
+   <ion-radio Name="Question1" value="a" >
+   </ion-radio>
+   </ion-item>
+
+   <ion-item>
+   <ion-label> b. Pang-uri </ion-label>
+   <ion-radio Name="Question1" value="b">
+   </ion-radio>
+   </ion-item>
+
+   <ion-item>
+   <ion-label> c. Pangngalan </ion-label>
+   <ion-radio Name="Question1" value="c">
+   </ion-radio>
+
+   </ion-item>
+   <ion-item><ion-label> d. Panghalip</ion-label> 
+   <ion-radio Name="Question1" value="d">
+   </ion-radio></ion-item>
+  </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+  <ion-label color="dark"> 2.Alin sa mga sumusunod ang tawag sa pangngalan ng tao, lugar, bagay, o ideya?</ion-label>
+  </ion-card-header>
+  
+   
+  <ion-list>
+    <ion-radio-group [(ngModel)] ="Question2" (ionChange)="SeeAnswer2()">
+     
+    <ion-item>
+     <ion-label> a.Pang-uri</ion-label>
+     <ion-radio Name="Question2" value="a">
+     </ion-radio>
+     </ion-item>
+  
+     <ion-item>
+     <ion-label> b. Panghalip </ion-label>
+     <ion-radio Name="Question2" value="b">
+     </ion-radio>
+     </ion-item>
+  
+     <ion-item>
+     <ion-label> c. Pandiwa </ion-label>
+     <ion-radio Name="Question2" value="c">
+     </ion-radio>
+  
+     </ion-item>
+     <ion-item><ion-label> d. Pangngalan</ion-label> 
+     <ion-radio Name="Question2" value="d">
+     </ion-radio>
+    </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+    <ion-label color="dark"> 3.Paano tatawagin ang pangungusap na nagsasaad ng kilos o gawain?</ion-label>
+    </ion-card-header>
+    
+     
+    <ion-list>
+      <ion-radio-group [(ngModel)] ="Question3" (ionChange)="SeeAnswer3()">
+       
+      <ion-item>
+       <ion-label> a.Pautos</ion-label>
+       <ion-radio Name="Question3" value="a">
+       </ion-radio>
+       </ion-item>
+    
+       <ion-item>
+       <ion-label> b. Pautos-pangungusap </ion-label>
+       <ion-radio Name="Question3" value="b">
+       </ion-radio>
+       </ion-item>
+    
+       <ion-item>
+       <ion-label> c. Pautos-diyalehikal</ion-label>
+       <ion-radio Name="Question3" value="c">
+       </ion-radio>
+    
+       </ion-item>
+       <ion-item><ion-label> d. Pautos-diwa</ion-label> 
+       <ion-radio Name="Question3" value="d">
+       </ion-radio>
+      </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    </ion-card>
+  
+    <ion-card>
+      <ion-card-header>
+      <ion-label color="dark"> 4. Ano ang tawag sa bahagi ng pananalita na nagbibigay ng karagdagang impormasyon tungkol sa simuno?</ion-label>
+      </ion-card-header>
+      
+       
+      <ion-list>
+        <ion-radio-group [(ngModel)] ="Question4" (ionChange)="SeeAnswer4()">
+         
+        <ion-item>
+         <ion-label> a. Simuno</ion-label>
+         <ion-radio Name="Question4" value="a">
+         </ion-radio>
+         </ion-item>
+      
+         <ion-item>
+         <ion-label> b. Panaguri </ion-label>
+         <ion-radio Name="Question4" value="b">
+         </ion-radio>
+         </ion-item>
+      
+         <ion-item>
+         <ion-label> c. Pamuno </ion-label>
+         <ion-radio Name="Question4" value="c">
+         </ion-radio>
+      
+         </ion-item>
+         <ion-item><ion-label> d. Pang-abay</ion-label> 
+         <ion-radio Name="Question4" value="d">
+         </ion-radio>
+        </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      </ion-card>
+    
+      <ion-card>
+        <ion-card-header>
+        <ion-label color="dark"> 5.Aling titik ng alpabeto ang sumasunod sa "P"?</ion-label>
+        </ion-card-header>
+        
+         
+        <ion-list>
+          <ion-radio-group [(ngModel)] ="Question5" (ionChange)="SeeAnswer5()">
+           
+          <ion-item>
+           <ion-label> a.O</ion-label>
+           <ion-radio Name="Question5" value="a">
+           </ion-radio>
+           </ion-item>
+        
+           <ion-item>
+           <ion-label> b. Q </ion-label>
+           <ion-radio Name="Question5" value="b">
+           </ion-radio>
+           </ion-item>
+        
+           <ion-item>
+           <ion-label> c. R </ion-label>
+           <ion-radio Name="Question5" value="c">
+           </ion-radio>
+        
+           </ion-item>
+           <ion-item><ion-label> d. S</ion-label> 
+           <ion-radio Name="Question5" value="d">
+           </ion-radio>
+          </ion-item>
+          </ion-radio-group>
+        </ion-list>
+        </ion-card>
+      
+        <ion-card>
+          <ion-card-header>
+          <ion-label color="dark"> 6.Ibigay ang kasingkahulugan ng salitang "malungkot."</ion-label>
+          </ion-card-header>
+          
+           
+          <ion-list>
+            <ion-radio-group [(ngModel)] ="Question6" (ionChange)="SeeAnswer6()">
+             
+            <ion-item>
+             <ion-label> a. Masaya</ion-label>
+             <ion-radio Name="Question6" value="a">
+             </ion-radio>
+             </ion-item>
+          
+             <ion-item>
+             <ion-label> b. Galak </ion-label>
+             <ion-radio Name="Question6" value="b">
+             </ion-radio>
+             </ion-item>
+          
+             <ion-item>
+             <ion-label> c. Ligaya</ion-label>
+             <ion-radio Name="Question6" value="c">
+             </ion-radio>
+          
+             </ion-item>
+             <ion-item><ion-label> d. Lungkot</ion-label> 
+             <ion-radio Name="Question6" value="d">
+             </ion-radio>
+            </ion-item>
+            </ion-radio-group>
+          </ion-list>
+          </ion-card>
+        
+          <ion-card>
+            <ion-card-header>
+            <ion-label color="dark"> 7.Ano ang tawag sa pangungusap na naglalarawan ng damdamin o nararamdaman?</ion-label>
+            </ion-card-header>
+            
+             
+            <ion-list>
+              <ion-radio-group [(ngModel)] ="Question7" (ionChange)="SeeAnswer7()">
+               
+              <ion-item>
+               <ion-label> a.Pautos</ion-label>
+               <ion-radio Name="Question7" value="a">
+               </ion-radio>
+               </ion-item>
+            
+               <ion-item>
+               <ion-label> b. Pautos-pangungusap</ion-label>
+               <ion-radio Name="Question7" value="b">
+               </ion-radio>
+               </ion-item>
+            
+               <ion-item>
+               <ion-label> c. Pautos-diyalehikal </ion-label>
+               <ion-radio Name="Question7" value="c">
+               </ion-radio>
+            
+               </ion-item>
+               <ion-item><ion-label> d. Pautos-diwa</ion-label> 
+               <ion-radio Name="Question7" value="d">
+               </ion-radio>
+              </ion-item>
+              </ion-radio-group>
+            </ion-list>
+            </ion-card>
+          
+            <ion-card>
+              <ion-card-header>
+              <ion-label color="dark"> 8.Alin sa mga sumusunod ang may diin sa unang pantig?</ion-label>
+              </ion-card-header>
+              
+               
+              <ion-list>
+                <ion-radio-group [(ngModel)] ="Question8" (ionChange)="SeeAnswer8()">
+                 
+                <ion-item>
+                 <ion-label> a. Malakas</ion-label>
+                 <ion-radio Name="Question8" value="a">
+                 </ion-radio>
+                 </ion-item>
+              
+                 <ion-item>
+                 <ion-label> b. Maangas </ion-label>
+                 <ion-radio Name="Question8" value="b">
+                 </ion-radio>
+                 </ion-item>
+              
+                 <ion-item>
+                 <ion-label> c.  Maganda </ion-label>
+                 <ion-radio Name="Question8" value="c">
+                 </ion-radio>
+              
+                 </ion-item>
+                 <ion-item><ion-label> d. Masaya</ion-label> 
+                 <ion-radio Name="Question8" value="d">
+                 </ion-radio>
+                </ion-item>
+                </ion-radio-group>
+              </ion-list>
+              </ion-card>
+              
+                <ion-card>
+                  <ion-card-header>
+                  <ion-label color="dark"> 9.Ibigay ang kasingkahulugan ng salitang "mabilis."</ion-label>
+                  </ion-card-header>
+                  
+                   
+                  <ion-list>
+                    <ion-radio-group [(ngModel)] ="Question9" (ionChange)="SeeAnswer9()">
+                     
+                    <ion-item>
+                     <ion-label> a. Bagal</ion-label>
+                     <ion-radio Name="Question9" value="a">
+                     </ion-radio>
+                     </ion-item>
+                  
+                     <ion-item>
+                     <ion-label> b. Madali </ion-label>
+                     <ion-radio Name="Question9" value="b">
+                     </ion-radio>
+                     </ion-item>
+                  
+                     <ion-item>
+                     <ion-label> c. Mahina</ion-label>
+                     <ion-radio Name="Question9" value="c">
+                     </ion-radio>
+                  
+                     </ion-item>
+                     <ion-item><ion-label> d. Malayo</ion-label> 
+                     <ion-radio Name="Question9" value="d">
+                     </ion-radio>
+                    </ion-item>
+                    </ion-radio-group>
+                  </ion-list>
+                  </ion-card>
+                
+                  <ion-card>
+                    <ion-card-header>
+                    <ion-label color="dark"> 10.Ano ang tawag sa pangungusap na nagbibigay ng utos o nag-uutos?</ion-label>
+                    </ion-card-header>
+                    
+                     
+                    <ion-list>
+                      <ion-radio-group [(ngModel)] ="Question10" (ionChange)="SeeAnswer10()">
+                       
+                      <ion-item>
+                       <ion-label> a. Pautos</ion-label>
+                       <ion-radio Name="Question10" value="a">
+                       </ion-radio>
+                       </ion-item>
+                    
+                       <ion-item>
+                       <ion-label> b. Pautos-pangungusap </ion-label>
+                       <ion-radio Name="Question10" value="b">
+                       </ion-radio>
+                       </ion-item>
+                    
+                       <ion-item>
+                       <ion-label> c. Pautos-diyalehikal </ion-label>
+                       <ion-radio Name="Question10" value="c">
+                       </ion-radio>
+                    
+                       </ion-item>
+                       <ion-item><ion-label> d. Pautos-diwa</ion-label> 
+                       <ion-radio Name="Question10" value="d">
+                       </ion-radio>
+                      </ion-item>
+                      </ion-radio-group>
+                    </ion-list>
+                    </ion-card>                                                                  
+  
+                    <ion-button tappable (click)="SeeAnswer1"> See Score </ion-button>
+                     <ion-label>Your score is {{score}} </ion-label>

@@ -1,0 +1,373 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Math</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <img src="./assets/math1.jpg"/>
+  
+    <ion-card-content>
+     Directions: Read the questions carefully and choose the correct answer.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+    <ion-label color="dark"> 1. What us the symbol of Plus?</ion-label>
+    </ion-card-header>
+    
+     
+    <ion-list>
+      <ion-radio-group [(ngModel)] ="Question1" (ionChange)="SeeAnswer1()">
+       
+      <ion-item>
+       <ion-label> a. (-)</ion-label>
+       <ion-radio Name="Question1" value="a">
+       </ion-radio>
+       </ion-item>
+    
+       <ion-item>
+       <ion-label> b. (%) </ion-label>
+       <ion-radio Name="Question1" value="b">
+       </ion-radio>
+       </ion-item>
+    
+       <ion-item>
+       <ion-label> c. (+) </ion-label>
+       <ion-radio Name="Question1" value="c">
+       </ion-radio>
+    
+       </ion-item>
+       <ion-item><ion-label> d. (=)</ion-label> 
+       <ion-radio Name="Question1" value="d">
+       </ion-radio>
+      </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    </ion-card> 
+
+  
+    <ion-card>
+      <ion-card-header>
+      <ion-label color="dark"> 2. Find the sum of the following (4+5=5+4)</ion-label>
+      </ion-card-header>
+      
+       
+      <ion-list>
+        <ion-radio-group [(ngModel)] ="Question2" (ionChange)="SeeAnswer2()">
+         
+        <ion-item>
+         <ion-label> a. 90</ion-label>
+         <ion-radio Name="Question2" value="a">
+         </ion-radio>
+         </ion-item>
+      
+         <ion-item>
+         <ion-label> b. 9 </ion-label>
+         <ion-radio Name="Question2" value="b">
+         </ion-radio>
+         </ion-item>
+      
+         <ion-item>
+         <ion-label> c. 18 </ion-label>
+         <ion-radio Name="Question2" value="c">
+         </ion-radio>
+      
+         </ion-item>
+         <ion-item><ion-label> d. 0</ion-label> 
+         <ion-radio Name="Question2" value="d">
+         </ion-radio>
+        </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      </ion-card> 
+
+      <ion-card>
+        <ion-card-header>
+        <ion-label color="dark"> 3. Arrange these numbers from lowest to highest 12,25,18,23,14.</ion-label>
+        </ion-card-header>
+        
+         
+        <ion-list>
+          <ion-radio-group [(ngModel)] ="Question3" (ionChange)="SeeAnswer3()">
+           
+          <ion-item>
+           <ion-label> a. 23,14,18,25,12</ion-label>
+           <ion-radio Name="Question3" value="a">
+           </ion-radio>
+           </ion-item>
+        
+           <ion-item>
+           <ion-label> b. 25,2318,14,12 </ion-label>
+           <ion-radio Name="Question3" value="b">
+           </ion-radio>
+           </ion-item>
+        
+           <ion-item>
+           <ion-label> c. 12,14,18,23,25 </ion-label>
+           <ion-radio Name="Question3" value="c">
+           </ion-radio>
+        
+           </ion-item>
+           <ion-item><ion-label> d. 14,12,18,23,25</ion-label> 
+           <ion-radio Name="Question3" value="d">
+           </ion-radio>
+          </ion-item>
+          </ion-radio-group>
+        </ion-list>
+        </ion-card> 
+      
+
+        <ion-card>
+          <ion-card-header>
+          <ion-label color="dark"> 4.  If a had 15 pens and I lost 10, how many pens do I have now?</ion-label>
+          </ion-card-header>
+          
+           
+          <ion-list>
+            <ion-radio-group [(ngModel)] ="Question4" (ionChange)="SeeAnswer4()">
+             
+            <ion-item>
+             <ion-label> a. 6</ion-label>
+             <ion-radio Name="Question4" value="a">
+             </ion-radio>
+             </ion-item>
+          
+             <ion-item>
+             <ion-label> b. 2 </ion-label>
+             <ion-radio Name="Question4" value="b">
+             </ion-radio>
+             </ion-item>
+          
+             <ion-item>
+             <ion-label> c. 4 </ion-label>
+             <ion-radio Name="Question4" value="c">
+             </ion-radio>
+          
+             </ion-item>
+             <ion-item><ion-label> d. 5</ion-label> 
+             <ion-radio Name="Question4" value="d">
+             </ion-radio>
+            </ion-item>
+            </ion-radio-group>
+          </ion-list>
+          </ion-card> 
+
+          <ion-card>
+            <ion-card-header>
+            <ion-label color="dark"> 5. Which adds up to 12?</ion-label>
+            </ion-card-header>
+            
+             
+            <ion-list>
+              <ion-radio-group [(ngModel)] ="Question5" (ionChange)="SeeAnswer5()">
+               
+              <ion-item>
+               <ion-label> a. 6+6</ion-label>
+               <ion-radio Name="Question5" value="a">
+               </ion-radio>
+               </ion-item>
+            
+               <ion-item>
+               <ion-label> b. 5+7 </ion-label>
+               <ion-radio Name="Question5" value="b">
+               </ion-radio>
+               </ion-item>
+            
+               <ion-item>
+               <ion-label> c. 10+2 </ion-label>
+               <ion-radio Name="Question5" value="c">
+               </ion-radio>
+            
+               </ion-item>
+               <ion-item><ion-label> d. all of the above</ion-label> 
+               <ion-radio Name="Question5" value="d">
+               </ion-radio>
+              </ion-item>
+              </ion-radio-group>
+            </ion-list>
+            </ion-card> 
+
+            <ion-card>
+              <ion-card-header>
+              <ion-label color="dark"> 6. 12 subject subtract from 38 equals to __?</ion-label>
+              </ion-card-header>
+              
+               
+              <ion-list>
+                <ion-radio-group [(ngModel)] ="Question6" (ionChange)="SeeAnswer6()">
+                 
+                <ion-item>
+                 <ion-label> a. 30</ion-label>
+                 <ion-radio Name="Question6" value="a">
+                 </ion-radio>
+                 </ion-item>
+              
+                 <ion-item>
+                 <ion-label> b. 22</ion-label>
+                 <ion-radio Name="Question6" value="b">
+                 </ion-radio>
+                 </ion-item>
+              
+                 <ion-item>
+                 <ion-label> c. 26 </ion-label>
+                 <ion-radio Name="Question6" value="c">
+                 </ion-radio>
+              
+                 </ion-item>
+                 <ion-item><ion-label> d. 50</ion-label> 
+                 <ion-radio Name="Question6" value="d">
+                 </ion-radio>
+                </ion-item>
+                </ion-radio-group>
+              </ion-list>
+              </ion-card> 
+
+              <ion-card>
+                <ion-card-header>
+                <ion-label color="dark"> 7. Which is missing addend? (__+1=7 1+__=7)</ion-label>
+                </ion-card-header>
+                
+                 
+                <ion-list>
+                  <ion-radio-group [(ngModel)] ="Question7" (ionChange)="SeeAnswer7()">
+                   
+                  <ion-item>
+                   <ion-label> a. 8</ion-label>
+                   <ion-radio Name="Question7" value="a">
+                   </ion-radio>
+                   </ion-item>
+                
+                   <ion-item>
+                   <ion-label> b. 7 </ion-label>
+                   <ion-radio Name="Question7" value="b">
+                   </ion-radio>
+                   </ion-item>
+                
+                   <ion-item>
+                   <ion-label> c.  6 </ion-label>
+                   <ion-radio Name="Question7" value="c">
+                   </ion-radio>
+                
+                   </ion-item>
+                   <ion-item><ion-label> d. 4</ion-label> 
+                   <ion-radio Name="Question7" value="d">
+                   </ion-radio>
+                  </ion-item>
+                  </ion-radio-group>
+                </ion-list>
+                </ion-card> 
+
+                <ion-card>
+                  <ion-card-header>
+                  <ion-label color="dark"> 8. 121 Divided by 11 is </ion-label>
+                  </ion-card-header>
+                  
+                   
+                  <ion-list>
+                    <ion-radio-group [(ngModel)] ="Question8" (ionChange)="SeeAnswer8()">
+                     
+                    <ion-item>
+                     <ion-label> a. 11</ion-label>
+                     <ion-radio Name="Question8" value="a">
+                     </ion-radio>
+                     </ion-item>
+                  
+                     <ion-item>
+                     <ion-label> b. 10 </ion-label>
+                     <ion-radio Name="Question8" value="b">
+                     </ion-radio>
+                     </ion-item>
+                  
+                     <ion-item>
+                     <ion-label> c. 19 </ion-label>
+                     <ion-radio Name="Question8" value="c">
+                     </ion-radio>
+                  
+                     </ion-item>
+                     <ion-item><ion-label> d. 18</ion-label> 
+                     <ion-radio Name="Question8" value="d">
+                     </ion-radio>
+                    </ion-item>
+                    </ion-radio-group>
+                  </ion-list>
+                  </ion-card> 
+
+                  <ion-card>
+                    <ion-card-header>
+                    <ion-label color="dark"> 9. Subtract 18-8-8=?</ion-label>
+                    </ion-card-header>
+                    
+                     
+                    <ion-list>
+                      <ion-radio-group [(ngModel)] ="Question9" (ionChange)="SeeAnswer9()">
+                       
+                      <ion-item>
+                       <ion-label> a. 2</ion-label>
+                       <ion-radio Name="Question9" value="a">
+                       </ion-radio>
+                       </ion-item>
+                    
+                       <ion-item>
+                       <ion-label> b. 4 </ion-label>
+                       <ion-radio Name="Question9" value="b">
+                       </ion-radio>
+                       </ion-item>
+                    
+                       <ion-item>
+                       <ion-label> c.  16 </ion-label>
+                       <ion-radio Name="Question9" value="c">
+                       </ion-radio>
+                    
+                       </ion-item>
+                       <ion-item><ion-label> d. 18</ion-label> 
+                       <ion-radio Name="Question9" value="d">
+                       </ion-radio>
+                      </ion-item>
+                      </ion-radio-group>
+                    </ion-list>
+                    </ion-card> 
+
+                    <ion-card>
+                      <ion-card-header>
+                      <ion-label color="dark"> 10. What is the symbol of equal?</ion-label>
+                      </ion-card-header>
+                      
+                       
+                      <ion-list>
+                        <ion-radio-group [(ngModel)] ="Question10" (ionChange)="SeeAnswer10()">
+                         
+                        <ion-item>
+                         <ion-label> a. (-)</ion-label>
+                         <ion-radio Name="Question10" value="a">
+                         </ion-radio>
+                         </ion-item>
+                      
+                         <ion-item>
+                         <ion-label> b. (=)</ion-label>
+                         <ion-radio Name="Question10" value="b">
+                         </ion-radio>
+                         </ion-item>
+                      
+                         <ion-item>
+                         <ion-label> c. (+) </ion-label>
+                         <ion-radio Name="Question10" value="c">
+                         </ion-radio>
+                      
+                         </ion-item>
+                         <ion-item><ion-label> d. (/)</ion-label> 
+                         <ion-radio Name="Question10" value="d">
+                         </ion-radio>
+                        </ion-item>
+                        </ion-radio-group>
+                      </ion-list>
+                      </ion-card> 
+
+                      <ion-button tappable (click)="SeeAnswer1"> See Score </ion-button>
+  <ion-label>Your score is {{score}} </ion-label>

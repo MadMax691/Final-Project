@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+
+  <ion-card-header>
+<ion-card-title>Welcome Students! </ion-card-title>
+  </ion-card-header>
+  
+
+  <ion-card>
+    <img src="./assets/studd.png"/>
+  
+    <ion-card-content>
+    <div tappable (ionChange)="lookGrades" >
+      <ion-item> 
+      <ion-label position="floating"> Username: </ion-label>
+      <ion-input type="text" [(ngModel)]="txtusername" (ionChange)="lookGrades()"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+      <ion-label position="floating"> Password:</ion-label>
+      <ion-input type="password" [(ngModel)]="txtpassword" (ionChange)="lookGrades()"></ion-input>
+      </ion-item>
+
+      <ion-button tappable (click)="lookGrades()"  expand = "full" color="medium">LOGIN </ion-button>
+     <p> <ion-input type="text" [(ngModel)]="remarks1"></ion-input> </p>
+     <p> <ion-input type="text" [(ngModel)]="remarks2"> </ion-input> </p>
+    </div>
+  </ion-card-content>
+</ion-card>
+
+
+
+
+

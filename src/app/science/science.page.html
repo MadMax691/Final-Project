@@ -1,0 +1,442 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Science</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+
+  <ion-card>
+    <img src="./assets/science.jpg"/>
+  
+    <ion-card-content>
+     Directions: Read the questions carefully and choose the correct answer.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>1. Which animal lays egg? </ion-card-title>
+    </ion-card-header>
+
+   <ion-radio-group [(ngModel)] ="Question1" (ionChange)="SeeAnswer1()">
+     
+      <ion-item>
+        <ion-thumbnail slot="start">
+            <img src="./assets/dog.jpeg"> 
+          </ion-thumbnail>
+          <ion-label>a. Dog</ion-label> <ion-radio Name="Question1" value="a" >
+          </ion-radio>
+        </ion-item>
+          
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="./assets/cat.jpg"/>
+          </ion-thumbnail>
+          <ion-label>b. Cat</ion-label><ion-radio Name="Question1" value="b" >
+          </ion-radio>
+        </ion-item>
+
+        
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="./assets/duck.jpg" />
+          </ion-thumbnail>
+          <ion-label>c. Duck</ion-label><ion-radio Name="Question1" value="c" >
+          </ion-radio>
+        </ion-item>
+        
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="./assets/sheep.jpg" />
+          </ion-thumbnail>
+          <ion-label>d. Sheep</ion-label><ion-radio Name="Question1" value="d" >
+          </ion-radio>
+        </ion-item>
+</ion-radio-group>
+      </ion-card>
+     
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>2. Which shape is round? </ion-card-title>
+          </ion-card-header>
+      
+         <ion-radio-group [(ngModel)] ="Question2" (ionChange)="SeeAnswer2()">
+           
+            <ion-item>
+              <ion-thumbnail slot="start">
+                  <img src="./assets/ball.jpg" /> 
+                </ion-thumbnail>
+                <ion-label>a. Ball</ion-label> <ion-radio Name="Question2" value="a" >
+                </ion-radio>
+              </ion-item>
+                
+              <ion-item>
+                <ion-thumbnail slot="start">
+                  <img src="./assets/barbie.jpg" />
+                </ion-thumbnail>
+                <ion-label>b. Barbie</ion-label><ion-radio Name="Question2" value="b" >
+                </ion-radio>
+              </ion-item>
+      
+              <ion-item>
+                <ion-thumbnail slot="start">
+                  <img src="./assets/window.jpg" />
+                </ion-thumbnail>
+                <ion-label>c. Window</ion-label><ion-radio Name="Question2" value="c" >
+                </ion-radio>
+              </ion-item>
+              
+              <ion-item>
+                <ion-thumbnail slot="start">
+                  <img src="./assets/roof.jpg" />
+                </ion-thumbnail>
+                <ion-label>d. Roof</ion-label><ion-radio Name="Question2" value="d" >
+                </ion-radio>
+              </ion-item>
+            </ion-radio-group>
+            </ion-card>
+
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>3. All animals need food,air, and ___ to survive? </ion-card-title>
+              </ion-card-header>
+          
+             <ion-radio-group [(ngModel)] ="Question3" (ionChange)="SeeAnswer3()">
+               
+                <ion-item>
+                  <ion-thumbnail slot="start">
+                      <img src="./assets/house.jfif" /> 
+                    </ion-thumbnail>
+                    <ion-label>a. House</ion-label> <ion-radio Name="Question3" value="a" >
+                    </ion-radio>
+                  </ion-item>
+                    
+                  <ion-item>
+                    <ion-thumbnail slot="start">
+                      <img src="./assets/water.jpg" />
+                    </ion-thumbnail>
+                    <ion-label>b. Water</ion-label><ion-radio Name="Question3" value="b" >
+                    </ion-radio>
+                  </ion-item>
+          
+                  <ion-item>
+                    <ion-thumbnail slot="start">
+                      <img src="./assets/chocolate.jpg" />
+                    </ion-thumbnail>
+                    <ion-label>c. Chocolate</ion-label><ion-radio Name="Question3" value="c" >
+                    </ion-radio>
+                  </ion-item>
+                  
+                  <ion-item>
+                    <ion-thumbnail slot="start">
+                      <img src="./assets/fruits.jpg" />
+                    </ion-thumbnail>
+                    <ion-label>d. Fruits</ion-label><ion-radio Name="Question3" value="d" >
+                    </ion-radio>
+              </ion-item>
+          </ion-radio-group>
+          </ion-card>
+           
+          
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>4. ___helps pump blood through the entire body </ion-card-title>
+            </ion-card-header>
+        
+           <ion-radio-group [(ngModel)] ="Question4" (ionChange)="SeeAnswer4()">
+             
+              <ion-item>
+                <ion-thumbnail slot="start">
+                    <img src="./assets/lungs.png" /> 
+                  </ion-thumbnail>
+                  <ion-label>a. Lungs</ion-label> <ion-radio Name="Question4" value="a" >
+                  </ion-radio>
+                </ion-item>
+                  
+                <ion-item>
+                  <ion-thumbnail slot="start">
+                    <img src="./assets/stomach.jpeg" />
+                  </ion-thumbnail>
+                  <ion-label>b. Stomach</ion-label><ion-radio Name="Question4" value="b" >
+                  </ion-radio>
+                </ion-item>
+        
+                <ion-item>
+                  <ion-thumbnail slot="start">
+                    <img src="./assets/heart.jpeg" />
+                  </ion-thumbnail>
+                  <ion-label>c. Heart</ion-label><ion-radio Name="Question4" value="c" >
+                  </ion-radio>
+                </ion-item>
+                
+                <ion-item>
+                  <ion-thumbnail slot="start">
+                    <img src="./assets/kidney.jpg" />
+                  </ion-thumbnail>
+                  <ion-label>d. Kidney</ion-label><ion-radio Name="Question4" value="d" >
+                  </ion-radio>
+                </ion-item>
+  </ion-radio-group>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>5. What is Earth's only natural Sattelite? </ion-card-title>
+    </ion-card-header>
+
+   <ion-radio-group [(ngModel)] ="Question5" (ionChange)="SeeAnswer5()">
+     
+      <ion-item>
+        <ion-thumbnail slot="start">
+            <img src="/assets/sun1.jpg" /> 
+          </ion-thumbnail>
+          <ion-label>a. Sun</ion-label> <ion-radio Name="Question5" value="a" >
+          </ion-radio>
+        </ion-item>
+          
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="/assets/mars.png" />
+          </ion-thumbnail>
+          <ion-label>b. Mars</ion-label><ion-radio Name="Question5" value="b" >
+          </ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="/assets/venus.jpg" />
+          </ion-thumbnail>
+          <ion-label>c. Venus</ion-label><ion-radio Name="Question5" value="c" >
+          </ion-radio>
+        </ion-item>
+        
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img  src="/assets/moon.png" />
+          </ion-thumbnail>
+          <ion-label>d. Moon</ion-label><ion-radio Name="Question5" value="d" >
+          </ion-radio>
+        </ion-item> 
+    </ion-radio-group>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>6. The tree has a branch filled with green ___? </ion-card-title>
+      </ion-card-header>
+  
+     <ion-radio-group [(ngModel)] ="Question6" (ionChange)="SeeAnswer6()">
+       
+        <ion-item>
+          <ion-thumbnail slot="start">
+              <img src="/assets/hair.jpg" /> 
+            </ion-thumbnail>
+            <ion-label>a. Hair</ion-label> <ion-radio Name="Question6" value="a" >
+            </ion-radio>
+          </ion-item>
+            
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="/assets/leaves.jpg" />
+            </ion-thumbnail>
+            <ion-label>b. Leaves</ion-label><ion-radio Name="Question6" value="b" >
+            </ion-radio>
+          </ion-item>
+  
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="/assets/root.jpg" />
+            </ion-thumbnail>
+            <ion-label>c. Root</ion-label><ion-radio Name="Question6" value="c" >
+            </ion-radio>
+          </ion-item>
+          
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="/assets/trunk.JPG" />
+            </ion-thumbnail>
+            <ion-label>d. Trunk</ion-label><ion-radio Name="Question6" value="d" >
+            </ion-radio>
+          </ion-item>  
+        </ion-radio-group>
+      </ion-card>
+                                                     
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>7.  What part of the body helps you move? </ion-card-title>
+        </ion-card-header>
+    
+       <ion-radio-group [(ngModel)] ="Question7" (ionChange)="SeeAnswer7()">
+         
+          <ion-item>
+            <ion-thumbnail slot="start">
+                <img src="/assets/eyes1.jpg" /> 
+              </ion-thumbnail>
+              <ion-label>a. Eyes</ion-label> <ion-radio Name="Question7" value="a" >
+              </ion-radio>
+            </ion-item>
+              
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="/assets/ears.jpg" />
+              </ion-thumbnail>
+              <ion-label>b. Ears</ion-label><ion-radio Name="Question7" value="b" >
+              </ion-radio>
+            </ion-item>
+    
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="/assets/fingers.jpeg" />
+              </ion-thumbnail>
+              <ion-label>c. Fingers</ion-label><ion-radio Name="Question7" value="c" >
+              </ion-radio>
+            </ion-item>
+            
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="/assets/muscles.jpg" />
+              </ion-thumbnail>
+              <ion-label>d. Muscles</ion-label><ion-radio Name="Question7" value="d" >
+              </ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>8.  The two holes of the nose are called? </ion-card-title>
+          </ion-card-header>
+      
+         <ion-radio-group [(ngModel)] ="Question8" (ionChange)="SeeAnswer8()">
+           
+            <ion-item>
+              <ion-thumbnail slot="start">
+                  <img src="/assets/eyebrows.jpg" /> 
+                </ion-thumbnail>
+                <ion-label>a. Eyebrows</ion-label> <ion-radio Name="Question8" value="a" >
+                </ion-radio>
+              </ion-item>
+                
+              <ion-item>
+                <ion-thumbnail slot="start">
+                  <img src="/assets/nostrils.jpg" />
+                </ion-thumbnail>
+                <ion-label>b. Nostrils</ion-label><ion-radio Name="Question8" value="b" >
+                </ion-radio>
+              </ion-item>
+      
+              <ion-item>
+                <ion-thumbnail slot="start">
+                  <img src="/assets/nails.jpg" />
+                </ion-thumbnail>
+                <ion-label>c. Nails</ion-label><ion-radio Name="Question8" value="c" >
+                </ion-radio>
+              </ion-item>
+              
+              <ion-item>
+                <ion-thumbnail slot="start">
+                  <img src="/assets/teeth.jpg" />
+                </ion-thumbnail>
+                <ion-label>d. Teeth</ion-label><ion-radio Name="Question8" value="d" >
+                </ion-radio>
+              </ion-item>  
+            </ion-radio-group>
+          </ion-card>
+
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>9. Dark rain clouds can give out lightning and ____. </ion-card-title>
+            </ion-card-header>
+        
+           <ion-radio-group [(ngModel)] ="Question9" (ionChange)="SeeAnswer9()">
+             
+              <ion-item>
+                <ion-thumbnail slot="start">
+                    <img src="/assets/thunder.jpg" /> 
+                  </ion-thumbnail>
+                  <ion-label>a. Thunder</ion-label> <ion-radio Name="Question9" value="a" >
+                  </ion-radio>
+                </ion-item>
+                  
+                <ion-item>
+                  <ion-thumbnail slot="start">
+                    <img src="/assets/snow.png" />
+                  </ion-thumbnail>
+                  <ion-label>b.  Snow</ion-label><ion-radio Name="Question9" value="b" >
+                  </ion-radio>
+                </ion-item>
+        
+                <ion-item>
+                  <ion-thumbnail slot="start">
+                    <img src="/assets/sunlight.jpg" />
+                  </ion-thumbnail>
+                  <ion-label>c. Sunlight</ion-label><ion-radio Name="Question9" value="c" >
+                  </ion-radio>
+                </ion-item>
+                
+                <ion-item>
+                  <ion-thumbnail slot="start">
+                    <img src="/assets/wind.png" />
+                  </ion-thumbnail>
+                  <ion-label>d. Wind</ion-label><ion-radio Name="Question9" value="d" >
+                  </ion-radio>
+                </ion-item>   
+              </ion-radio-group>
+            </ion-card>
+
+            <ion-card>
+              <ion-card-header>
+            <ion-card-title>10.  Which is the largest land animal? </ion-card-title>
+          </ion-card-header>
+      
+         <ion-radio-group [(ngModel)] ="Question10" (ionChange)="SeeAnswer10()">
+           
+            <ion-item>
+              <ion-thumbnail slot="start">
+                  <img src="/assets/lion.jpg" /> 
+                </ion-thumbnail>
+                <ion-label>a. Lion</ion-label> <ion-radio Name="Question10" value="a" >
+                </ion-radio>
+              </ion-item>
+                
+              <ion-item>
+                <ion-thumbnail slot="start">
+                  <img src="/assets/tiger.jpg" />
+                </ion-thumbnail>
+                <ion-label>b. Tiger</ion-label><ion-radio Name="Question10" value="b" >
+                </ion-radio>
+              </ion-item>
+      
+              <ion-item>
+                <ion-thumbnail slot="start">
+                  <img src="/assets/elephant.jpg" />
+                </ion-thumbnail>
+                <ion-label>c. Elephant</ion-label><ion-radio Name="Question10" value="c" >
+                </ion-radio>
+              </ion-item>
+              
+              <ion-item>
+                <ion-thumbnail slot="start">
+                  <img src="/assets/rat.jpg" />
+                </ion-thumbnail>
+                <ion-label>d. Rat</ion-label><ion-radio Name="Question10" value="d" >
+                </ion-radio>
+              </ion-item>      
+            </ion-radio-group>
+          </ion-card>
+
+       
+          <ion-button tappable (click)="SeeAnswer1"> See Score </ion-button>
+            <ion-label>Your score is {{score}} </ion-label>
+          
+
+
+

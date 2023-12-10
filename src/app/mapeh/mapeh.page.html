@@ -1,0 +1,390 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>MAPEH</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  
+
+  <ion-card>
+    <img src="./assets/mapeh.jpg"/>
+  
+    <ion-card-content>
+     Directions: Read the questions carefully and choose the correct answer.
+    </ion-card-content>
+  </ion-card>
+    
+<ion-card>
+<ion-card-header>
+  <ion-label color="dark">1. What is the beat you can tap your foot to in music? </ion-label>
+</ion-card-header>
+
+ 
+<ion-list>
+  <ion-radio-group [(ngModel)] ="Question1" (ionChange)="SeeAnswer1()">
+   
+  <ion-item>
+   <ion-label> a. Melody</ion-label>
+   <ion-radio Name="Question1" value="a">
+   </ion-radio>
+   </ion-item>
+
+   <ion-item>
+   <ion-label> b. Harmony</ion-label>
+   <ion-radio Name="Question1" value="b">
+   </ion-radio>
+   </ion-item>
+
+   <ion-item>
+   <ion-label> c. Rhythm</ion-label>
+   <ion-radio Name="Question1" value="c">
+   </ion-radio>
+
+   </ion-item>
+   <ion-item><ion-label> d. Tempo</ion-label> 
+   <ion-radio Name="Question1" value="d">
+   </ion-radio>
+  </ion-item>
+  </ion-radio-group>
+</ion-list>
+</ion-card>
+
+<ion-card>
+<ion-card-header>
+  <ion-label color="dark"> 2.Question: What is a quick, unfinished drawing often used as a preliminary study?</ion-label>
+</ion-card-header>
+
+ 
+<ion-list>
+  <ion-radio-group [(ngModel)] ="Question2" (ionChange)="SeeAnswer2()">
+   
+  <ion-item>
+   <ion-label> a.  Painting</ion-label>
+   <ion-radio Name="Question2" value="a">
+   </ion-radio>
+   </ion-item>
+
+   <ion-item>
+   <ion-label> b. Sculpture</ion-label>
+   <ion-radio Name="Question2" value="b">
+   </ion-radio>
+   </ion-item>
+
+   <ion-item>
+   <ion-label> c. Sketch</ion-label>
+   <ion-radio Name="Question2" value="c">
+   </ion-radio>
+
+   </ion-item>
+   <ion-item><ion-label> d. Collage</ion-label> 
+   <ion-radio Name="Question2" value="d">
+   </ion-radio>
+  </ion-item>
+  </ion-radio-group>
+</ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-label color="dark">3.Which of the following is a percussion instrument? </ion-label>
+  </ion-card-header>
+
+ <ion-radio-group [(ngModel)] ="Question3" (ionChange)="SeeAnswer3()">
+   
+    <ion-item>
+      <ion-thumbnail slot="start">
+          <img src="./assets/violin.png" /> 
+        </ion-thumbnail>
+        <ion-label>a. Violin</ion-label> <ion-radio Name="Question3" value="a" >
+        </ion-radio>
+      </ion-item>
+        
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="./assets/trumpet.jpg" />
+        </ion-thumbnail>
+        <ion-label>b. Trumpet</ion-label><ion-radio Name="Question3" value="b" >
+        </ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="./assets/drum.png" />
+        </ion-thumbnail>
+        <ion-label>c. Drum</ion-label><ion-radio Name="Question3" value="c" >
+        </ion-radio>
+      </ion-item>
+      
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="./assets/flute.png" />
+        </ion-thumbnail>
+        <ion-label>d.  Flute</ion-label><ion-radio Name="Question3" value="d" >
+        </ion-radio>
+  </ion-item>
+</ion-radio-group>
+</ion-card>
+  
+  <ion-card>
+    <ion-card-header>
+    <ion-label color="dark"> 4.What do we call a finished artwork using various painting techniques and materials?</ion-label>
+    </ion-card-header>
+    
+     
+    <ion-list>
+      <ion-radio-group [(ngModel)] ="Question4" (ionChange)="SeeAnswer4()">
+       
+      <ion-item>
+       <ion-label> a.  Doodle</ion-label>
+       <ion-radio Name="Question4" value="a">
+       </ion-radio>
+       </ion-item>
+    
+       <ion-item>
+       <ion-label> b.  Outline</ion-label>
+       <ion-radio Name="Question4" value="b">
+       </ion-radio>
+       </ion-item>
+    
+       <ion-item>
+       <ion-label> c. Painting</ion-label>
+       <ion-radio Name="Question4" value="c">
+       </ion-radio>
+    
+       </ion-item>
+       <ion-item><ion-label> d. Mosaic</ion-label> 
+       <ion-radio Name="Question4" value="d">
+       </ion-radio>
+      </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+      <ion-label color="dark"> 5.Why is it important to warm up before exercise?</ion-label>
+      </ion-card-header>
+      
+       
+      <ion-list>
+        <ion-radio-group [(ngModel)] ="Question5" (ionChange)="SeeAnswer5()">
+         
+        <ion-item>
+         <ion-label> a. To cool down muscles</ion-label>
+         <ion-radio Name="Question5" value="a">
+         </ion-radio>
+         </ion-item>
+      
+         <ion-item>
+         <ion-label> b.  To watch TV</ion-label>
+         <ion-radio Name="Question5" value="b">
+         </ion-radio>
+         </ion-item>
+      
+         <ion-item>
+         <ion-label> c. To prepare muscles and prevent injuries</ion-label>
+         <ion-radio Name="Question5" value="c">
+         </ion-radio>
+      
+         </ion-item>
+         <ion-item><ion-label> d. To eat snacks</ion-label> 
+         <ion-radio Name="Question5" value="d">
+         </ion-radio>
+        </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title> 6. In which sport do players kick a ball into a goal? </ion-card-title>
+        </ion-card-header>
+    
+       <ion-radio-group [(ngModel)] ="Question6" (ionChange)="SeeAnswer6()">
+         
+          <ion-item>
+            <ion-thumbnail slot="start">
+                <img src="/assets/basketball.png" /> 
+              </ion-thumbnail>
+              <ion-label>a. Basketball</ion-label> <ion-radio Name="Question6" value="a" >
+              </ion-radio>
+            </ion-item>
+              
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="/assets/soccer.jpg" />
+              </ion-thumbnail>
+              <ion-label>b. Soccer</ion-label><ion-radio Name="Question6" value="b" >
+              </ion-radio>
+            </ion-item>
+    
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="/assets/volleyball.png" />
+              </ion-thumbnail>
+              <ion-label>c. Volleyball</ion-label><ion-radio Name="Question6" value="c" >
+              </ion-radio>
+            </ion-item>
+            
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="/assets/tennis.png" />
+              </ion-thumbnail>
+              <ion-label>d. Tennis</ion-label><ion-radio Name="Question6" value="d" >
+              </ion-radio>
+            </ion-item>  
+          </ion-radio-group>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+          <ion-label color="dark"> 7.Why is it important to eat a variety of fruits and vegetables?</ion-label>
+          </ion-card-header>
+          
+           
+          <ion-list>
+            <ion-radio-group [(ngModel)] ="Question7" (ionChange)="SeeAnswer7()">
+             
+            <ion-item>
+             <ion-label> a. They provide essential vitamins.</ion-label>
+             <ion-radio Name="Question7" value="a">
+             </ion-radio>
+             </ion-item>
+          
+             <ion-item>
+             <ion-label> b.  They make you taller.</ion-label>
+             <ion-radio Name="Question7" value="b">
+             </ion-radio>
+             </ion-item>
+          
+             <ion-item>
+             <ion-label> c. They glow in the dark.</ion-label>
+             <ion-radio Name="Question7" value="c">
+             </ion-radio>
+          
+             </ion-item>
+             <ion-item><ion-label> d. They're fun to juggle.</ion-label> 
+             <ion-radio Name="Question7" value="d">
+             </ion-radio>
+            </ion-item>
+            </ion-radio-group>
+          </ion-list>
+          </ion-card>
+
+          <ion-card>
+            <ion-card-header>
+            <ion-label color="dark"> 8. What activity helps keep our heart healthy and our bodies strong?</ion-label>
+            </ion-card-header>
+            
+             
+            <ion-list>
+              <ion-radio-group [(ngModel)] ="Question8" (ionChange)="SeeAnswer8()">
+               
+              <ion-item>
+               <ion-label> a. Watching TV</ion-label>
+               <ion-radio Name="Question8" value="a">
+               </ion-radio>
+               </ion-item>
+            
+               <ion-item>
+               <ion-label> b.  Exercise or physical activity</ion-label>
+               <ion-radio Name="Question8" value="b">
+               </ion-radio>
+               </ion-item>
+            
+               <ion-item>
+               <ion-label> c.  Eating candy</ion-label>
+               <ion-radio Name="Question8" value="c">
+               </ion-radio>
+            
+               </ion-item>
+               <ion-item><ion-label> d. Sleeping all day</ion-label> 
+               <ion-radio Name="Question8" value="d">
+               </ion-radio>
+              </ion-item>
+              </ion-radio-group>
+            </ion-list>
+            </ion-card>
+
+            <ion-card>
+              <ion-card-header>
+              <ion-label color="dark"> 9. What does the "H" stand for in MAPEH?</ion-label>
+              </ion-card-header>
+              
+               
+              <ion-list>
+                <ion-radio-group [(ngModel)] ="Question9" (ionChange)="SeeAnswer9()">
+                 
+                <ion-item>
+                 <ion-label> a. Harmony</ion-label>
+                 <ion-radio Name="Question9" value="a">
+                 </ion-radio>
+                 </ion-item>
+              
+                 <ion-item>
+                 <ion-label> b. Health</ion-label>
+                 <ion-radio Name="Question9" value="b">
+                 </ion-radio>
+                 </ion-item>
+              
+                 <ion-item>
+                 <ion-label> c. History</ion-label>
+                 <ion-radio Name="Question9" value="c">
+                 </ion-radio>
+              
+                 </ion-item>
+                 <ion-item><ion-label> d. Happiness</ion-label> 
+                 <ion-radio Name="Question9" value="d">
+                 </ion-radio>
+                </ion-item>
+                </ion-radio-group>
+              </ion-list>
+              </ion-card>
+
+              <ion-card>
+                <ion-card-header>
+                <ion-label color="dark"> 10. In which subject do you learn about different art forms and styles?</ion-label>
+                </ion-card-header>
+                
+                 
+                <ion-list>
+                  <ion-radio-group [(ngModel)] ="Question10" (ionChange)="SeeAnswer10()">
+                   
+                  <ion-item>
+                   <ion-label> a. Math</ion-label>
+                   <ion-radio Name="Question10" value="a">
+                   </ion-radio>
+                   </ion-item>
+                
+                   <ion-item>
+                   <ion-label> b. Science</ion-label>
+                   <ion-radio Name="Question10" value="b">
+                   </ion-radio>
+                   </ion-item>
+                
+                   <ion-item>
+                   <ion-label> c. Geography</ion-label>
+                   <ion-radio Name="Question10" value="c">
+                   </ion-radio>
+                
+                   </ion-item>
+                   <ion-item><ion-label> d. Happiness</ion-label> 
+                   <ion-radio Name="Question10" value="d">
+                   </ion-radio>
+                  </ion-item>
+                  </ion-radio-group>
+                </ion-list>
+                </ion-card>
+  
+
+
+
+
+
+<ion-button tappable (click)="SeeAnswer1"> See Score </ion-button>
+  <ion-label>Your score is {{score}} </ion-label>

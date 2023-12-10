@@ -1,0 +1,320 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>English</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <img src="./assets/english.jpg"/>
+  
+    <ion-card-content>
+     Directions: Read the questions carefully and choose the correct answer.
+    </ion-card-content>
+  </ion-card>
+    
+    
+<ion-card>
+<ion-card-header>
+<ion-label color="dark"> 1. I __ good at climbing trees.</ion-label>
+</ion-card-header>
+
+ 
+<ion-list>
+  <ion-radio-group [(ngModel)] ="Question1" (ionChange)="SeeAnswer1()">
+   
+  <ion-item>
+   <ion-label> a.Do</ion-label>
+   <ion-radio Name="Question1" value="a">
+   </ion-radio>
+   </ion-item>
+
+   <ion-item>
+   <ion-label> b. Are </ion-label>
+   <ion-radio Name="Question1" value="b">
+   </ion-radio>
+   </ion-item>
+
+   <ion-item>
+   <ion-label> c. Am </ion-label>
+   <ion-radio Name="Question1" value="c">
+   </ion-radio>
+
+   </ion-item>
+   <ion-item><ion-label> d. Is</ion-label> 
+   <ion-radio Name="Question1" value="d">
+   </ion-radio>
+  </ion-item>
+  </ion-radio-group>
+</ion-list>
+</ion-card>
+
+  <ion-card>
+    <ion-card-header>
+  <ion-label color="dark"> 2. I have to __ my homework.</ion-label>
+</ion-card-header>
+
+  <ion-list>
+    <ion-radio-group [(ngModel)]="Question2" (ionChange)="SeeAnswer2()">
+     <ion-item>
+
+
+     <ion-label> a. Am</ion-label>
+     <ion-radio Name="Question2" value="a" >
+     </ion-radio>
+     </ion-item>
+
+     <ion-item>
+     <ion-label> b. Is </ion-label>
+     <ion-radio Name="Question2" value="b">
+     </ion-radio>
+     </ion-item>
+
+     <ion-item>
+     <ion-label> c. Are </ion-label>
+     <ion-radio Name="Question2" value="c">
+     </ion-radio>
+     </ion-item>
+
+     <ion-item><ion-label> d. Do</ion-label> 
+     <ion-radio Name="Question2" value="d">
+     </ion-radio></ion-item>
+    </ion-radio-group>
+    </ion-list>
+</ion-card>
+    
+<ion-card>
+      <ion-card-header>
+    <ion-label color="dark"> 3. They _ at the zoo.</ion-label>
+  </ion-card-header>
+    <ion-list>
+
+      <ion-radio-group Name="Question3" [(ngModel)]="Question3" (ionChange)="SeeAnswer3()" >
+       <ion-item>
+       <ion-label> a. Does</ion-label>
+       <ion-radio Name="Question3" value="a" >
+       </ion-radio>
+       </ion-item>
+       <ion-item>
+       <ion-label> b. Don't </ion-label>
+       <ion-radio Name="Question3" value="b">
+       </ion-radio>
+       </ion-item>
+       <ion-item>
+       <ion-label> c. Are </ion-label>
+       <ion-radio Name="Question3" value="c">
+       </ion-radio>
+       </ion-item>
+       <ion-item><ion-label> d. Is</ion-label> 
+       <ion-radio Name="Question3" value="d">
+       </ion-radio></ion-item>
+      </ion-radio-group>
+      </ion-list>
+  </ion-card>
+   
+  <ion-card>
+    <ion-card-header>
+  <ion-label color="dark"> 4. Elha and Jenny __ not want to go.</ion-label>
+</ion-card-header>
+  <ion-list>
+    <ion-radio-group Name="Question4" [(ngModel)]="Question4" (ionChange)="SeeAnswer4()" >
+     
+      <ion-item>
+     <ion-label> a . Do</ion-label>
+     <ion-radio Name="Question4" value="a" >
+     </ion-radio>
+     </ion-item>
+     <ion-item>
+     <ion-label> b. Does </ion-label>
+     <ion-radio Name="Question4" value="b">
+     </ion-radio>
+     </ion-item>
+     <ion-item>
+     <ion-label> c. That </ion-label>
+     <ion-radio Name="Question4" value="c">
+     </ion-radio>
+     </ion-item>
+     <ion-item><ion-label> d. Doesn't</ion-label> 
+     <ion-radio Name="Question4" value="d">
+     </ion-radio></ion-item>
+    </ion-radio-group>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+  <ion-label color="dark"> 5. Angel and Kirstine _ eating ice cream.</ion-label>
+</ion-card-header>
+  <ion-list>
+    <ion-radio-group Name="Question5" [(ngModel)]="Question5" (ionChange)="SeeAnswer5()" >
+     
+      <ion-item>
+     <ion-label>a. Does</ion-label>
+     <ion-radio Name="Question5" value="a" >
+     </ion-radio>
+     </ion-item>
+     <ion-item>
+     <ion-label> b. Do </ion-label>
+     <ion-radio Name="Question5" value="b">
+     </ion-radio>
+     </ion-item>
+     <ion-item>
+     <ion-label> c. Him </ion-label>
+     <ion-radio Name="Question5" value="c">
+     </ion-radio>
+     </ion-item>
+     <ion-item><ion-label> d. Are</ion-label> 
+     <ion-radio Name="Question5" value="d">
+     </ion-radio></ion-item>
+    </ion-radio-group>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+    <ion-label color="dark"> 6. She _ well at sports. </ion-label>
+  </ion-card-header>
+
+  <ion-list>
+    <ion-radio-group Name="Question6" [(ngModel)]="Question6" (ionChange)="SeeAnswer6()" >
+     <ion-item>
+     <ion-label> a. Does</ion-label>
+     <ion-radio Name="Question6" value="a" >
+     </ion-radio>
+     </ion-item>
+     <ion-item>
+     <ion-label> b. Do </ion-label>
+     <ion-radio Name="Question6" value="b">
+     </ion-radio>
+     </ion-item>
+     <ion-item>
+     <ion-label> c. Had </ion-label>
+     <ion-radio Name="Question6" value="c">
+     </ion-radio>
+     </ion-item>
+     <ion-item><ion-label> d. Are</ion-label> 
+     <ion-radio Name="Question6" value="d">
+     </ion-radio></ion-item>
+    </ion-radio-group>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+  <ion-label color="dark"> 7. Do you __ two pencils.</ion-label>
+</ion-card-header>
+  <ion-list>
+    <ion-radio-group Name="Question7" [(ngModel)]="Question7" (ionChange)="SeeAnswer7()" >
+     <ion-item>
+     <ion-label> a. His</ion-label>
+     <ion-radio Name="Question7" value="a" >
+     </ion-radio>
+     </ion-item>
+     <ion-item>
+     <ion-label> b. Have </ion-label>
+     <ion-radio Name="Question7" value="b">
+     </ion-radio>
+     </ion-item>
+     <ion-item>
+     <ion-label> c. Has </ion-label>
+     <ion-radio Name="Question7" value="c">
+     </ion-radio>
+     </ion-item>
+     <ion-item><ion-label> d. Does</ion-label> 
+     <ion-radio Name="Question7" value="d">
+     </ion-radio></ion-item>
+    </ion-radio-group>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+  <ion-label color="dark">8. My name is Joey _ am 10 years old.</ion-label>
+</ion-card-header>
+  <ion-list>
+    <ion-radio-group Name="Question8" [(ngModel)]="Question8" (ionChange)="SeeAnswer8()" >
+     <ion-item>
+     <ion-label> a. Are</ion-label>
+     <ion-radio Name="Question8" value="a" >
+     </ion-radio>
+     </ion-item>
+     <ion-item>
+     <ion-label> b. His</ion-label>
+     <ion-radio Name="Question8" value="b">
+     </ion-radio>
+     </ion-item>
+     <ion-item>
+     <ion-label> c. I'll</ion-label>
+     <ion-radio Name="Question8" value="c">
+     </ion-radio>
+     </ion-item>
+     <ion-item><ion-label>d. I</ion-label> 
+     <ion-radio Name="Question8" value="d">
+     </ion-radio></ion-item>
+    </ion-radio-group>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+  <ion-label color="dark"> 9. I have a brother _ is 7 years old.</ion-label>
+</ion-card-header>
+  <ion-list>
+    <ion-radio-group Name="Question9" [(ngModel)]="Question9" (ionChange)="SeeAnswer9()" >
+     <ion-item>
+     <ion-label> a. She</ion-label>
+     <ion-radio Name="Question9" value="a" >
+     </ion-radio>
+     </ion-item>
+     <ion-item>
+     <ion-label> b. He </ion-label>
+     <ion-radio Name="Question9" value="b">
+     </ion-radio>
+     </ion-item>
+     <ion-item>
+     <ion-label>c. His  </ion-label>
+     <ion-radio Name="Question9" value="c">
+     </ion-radio>
+     </ion-item>
+     <ion-item><ion-label> d.  Had</ion-label> 
+     <ion-radio Name="Question9" value="d">
+     </ion-radio></ion-item>
+    </ion-radio-group>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+  <ion-label color="dark"> 10. We _ not have class tomorrow.</ion-label>
+</ion-card-header>
+  <ion-list>
+    <ion-radio-group Name="Question10" [(ngModel)]="Question10" (ionChange)="SeeAnswer10()" >
+     <ion-item>
+     <ion-label> a. Do</ion-label>
+     <ion-radio Name="Question10" value="a" >
+     </ion-radio>
+     </ion-item>
+     <ion-item>
+     <ion-label> b. Does </ion-label>
+     <ion-radio Name="Question10" value="b">
+     </ion-radio>
+     </ion-item>
+     <ion-item>
+     <ion-label>c. Doesn't </ion-label>
+     <ion-radio Name="Questio10" value="c">
+     </ion-radio>
+     </ion-item>
+     <ion-item><ion-label> d. Did</ion-label> 
+     <ion-radio Name="Question10" value="d">
+     </ion-radio></ion-item>
+    </ion-radio-group>
+    </ion-list>
+</ion-card>
+
+ 
+<ion-button tappable (click)="SeeAnswer1" > See Score </ion-button>
+  <ion-label>Your score is {{score}} </ion-label>
